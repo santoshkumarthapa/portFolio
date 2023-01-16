@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-
+    'home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,8 +78,18 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+
+    'mysql':{
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'PYPROFILE',
+        'USER':'ROOT',
+        'PASSWORD':'Python$1991',
+        'HOST': 'LOCALHOST',
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation

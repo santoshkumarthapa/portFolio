@@ -14,7 +14,7 @@ class Myprofile(models.Model):
     rspbty = models.CharField(db_column='RSPBTY', max_length=50, blank=True, null=True)  # Field name made lowercase.
     st_dt = models.DateField(db_column='ST_DT', blank=True, null=True)  # Field name made lowercase.
     ed_dt = models.DateField(db_column='ED_DT', blank=True, null=True)  # Field name made lowercase.
-    emp_id = models.IntegerField(db_column='EMP_ID', primary_key=True)  # Field name made lowercase.
+    M = models.IntegerField(db_column='EMP_ID', primary_key=True)  # Field name made lowercase.
 
     class Meta:
         managed = False

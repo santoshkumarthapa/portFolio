@@ -1,3 +1,3 @@
-from django.test import TestCase
-
-# Create your tests here.
+ll = [1,2,3
+      ]
+print(ll[:-1])
